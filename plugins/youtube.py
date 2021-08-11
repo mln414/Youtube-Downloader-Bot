@@ -43,7 +43,7 @@ async def ytdl(_, message):
         output_directory = os.path.join(os.getcwd(), "downloads", str(message.chat.id))
         if not os.path.isdir(output_directory):
             os.makedirs(output_directory)
-        thumb_image_path = f"{output_directory}.jpg"
+        thumb_image_path = f"output_directory/{output_directory}.jpg"
         im.save(thumb_image_path,"jpeg")
         await message.reply_photo(thumb_image_path, caption=title, reply_markup=buttons)
         await sentm.delete()
