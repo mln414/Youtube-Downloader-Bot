@@ -1,7 +1,7 @@
 from pyrogram import Client
 import config
 
-DOWNLOAD_LOCATION = "./Downloads"
+DOWNLOAD_LOCATION = ".downloads"
 BOT_TOKEN = config.BOT_TOKEN
 
 APP_ID = config.APP_ID
